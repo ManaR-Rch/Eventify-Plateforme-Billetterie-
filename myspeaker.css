@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: antiquewhite;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color:rgba(232, 89, 220, 0.049);
+  backdrop-filter: blur(0,5px); 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 100px;  
+  height: 70px;
+  border-radius: 20px;
+  z-index: 3;
+}
+header {
+  background-image: url('imgs/speakersHead.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  height: 850px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  z-index: 0;
+}
+.logo img {
+  width: 100px;
+  height: 30px;
+  margin-left: 10px ;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  display: inline;
+  font-size: 15px; 
+  font-family: Arial, sans-serif; 
+  padding: 10px 0px;
+  border-radius: 20px;
+}
+
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.login a {
+  font-weight:bold;
+  border-radius: 20px; 
+  text-align: center; 
+  width:20px
+   }
+   .menu li.login {
+    border: 2px solid white;
+   }
+
+
+.content {
+  margin-top: 100px; 
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay-speaker {
+  position: absolute; 
+  top: 0;
+  left: 450px;
+  bottom: 0;
+  height: 800px;  
+  background: #ed469144;;
+  z-index: 1; 
+  width: 920px;
+
+}
+h1 {
+  font-size: 65px;
+  font-family: Overpass;
+  margin-bottom: 24px;
+}
+.header-text {
+  position: relative;
+  bottom: 80px;
+  right: 360px;
+  margin-left: auto; 
+  color: white; 
+  z-index: 2;
+  width: 500px;
+  text-align: left;
+}
+.header-text p{
+  font-size: 30px;
+  font-family: Doppio One;
+  line-height: 2; 
+}
