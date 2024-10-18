@@ -25,18 +25,64 @@ body {
   border-radius: 20px;
   z-index: 3;
 }
-header {
-  background-image: url('imgs/speakersHead.jpg'); 
-  background-size: cover; 
-  background-position: center; 
-  height: 800px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  z-index: 0;
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+  height: 100vh;
+  position: relative;
+}
+
+.image-container img {
+  width: 1561px;
+  height: 746px;
+  z-index: 1;
+}
+
+.container-text{
+  position: absolute;
+  right: 10%;
+  text-align: left;
+  color: white;
+  z-index: 3;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 212px;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 1.5;
+  padding-left: 22%;
+  padding-right: 30%;
+  
+}
+
+.btn {
+  background-color: #ff0051;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 22%;
+}
+.overlay {
+  position: absolute;
+  top: -6px;
+  width: 895px;
+  height: 100%;
+  background-color: #f081e967;
+  z-index: 2;
+  left: 461px;
+  height: 746px;
 }
 .logo img {
   width: 100px;
@@ -76,54 +122,6 @@ header {
    }
 
 
-.content {
-  margin-top: 100px; 
-  padding: 20px;
-  text-align: center;
-}
-
-.overlay-speaker {
-  position: absolute; 
-  top: 0;
-  left: 450px;
-  bottom: 0;
-  height: 800px;  
-  background: #ed469144;;
-  z-index: 1; 
-  width: 920px;
-
-}
-h1 {
-  font-size: 65px;
-  font-family: Overpass;
-  margin-bottom: 24px;
-}
-.header-text {
-  position: relative;
-  bottom: 80px;
-  right: 360px;
-  margin-left: auto; 
-  color: white; 
-  z-index: 2;
-  width: 500px;
-  text-align: left;
-}
-.header-text p{
-  font-size: 30px;
-  font-family: Doppio One;
-  line-height: 2; 
-}
-.button-white{
-  border-radius: 30px;
-  background: #F5167E;
-  border:none;
-  font-size: 20px;
-  font-weight:bold;
-  padding: 17px 50px;       
-  cursor: pointer;
-  color:white;
-}
-        
 .profile-container {
   display: flex;
   flex-direction: column;
@@ -144,9 +142,6 @@ h1 {
   overflow: visible;
   margin-bottom: 100px;
   margin-top: 100px;
-  
-
-
 }
 
 .profile-card img {
@@ -164,11 +159,18 @@ h1 {
 
 .profile-info h3 {
   margin: 0;
-  font-size: 1.1em;
+  margin-bottom: 0px;
+  margin-left: 0px;
+font-size: 2.1em;
+margin-left: 105px;
+margin-bottom: 34px;
+color: black;
 }
 
 .profile-info p {
-  font-size: 0.9em;
+  font-size: 23px;
+  font-weight: bold;
+  color: black;
 }
 
 .profile-card.reverse {
@@ -190,10 +192,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #d294b6; 
+  padding: 68px;
+  background-color: #d294b6;
   color: #333;
   font-family: Arial, sans-serif;
+  font-size: 22px;
 }
 
 .brands-text {
@@ -215,10 +218,11 @@ body {
 .brands-logos p {
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: 31px;
 }
 
 .logos img {
-  width: 100px;
+  width: 153px;
   margin: 0 10px;
 }
 footer {

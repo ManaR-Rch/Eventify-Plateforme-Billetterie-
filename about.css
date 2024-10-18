@@ -1,7 +1,8 @@
-/* Existing Styles */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #EEE1FF;
 }
 
 .header-section {
@@ -63,21 +64,17 @@ body {
    }
 
 
-/* .container {
-    display: flex;
-    height: 100vh;
-} */
-
 .text-sections {
     flex: 1;
-    background-color: #2E3A8C;
+    background-color: #242565;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     padding: 20px;
-    font-size: 5em;
+    font-size: 4em;
     text-align: center;
+    font-weight:bold;
     height: 656px;
     padding-top: 100px;
     
@@ -93,51 +90,50 @@ body {
     object-fit: cover;
     padding-bottom:120px;
 }
-
-
-.story-section {
-  background-color: #EEE1FF;
-  text-align: center;
-  padding: 170px;
-  margin: -85px;
-}
-
-.story-section h2 {
-  font-size: 4.5em;
-  margin-bottom: 20px;
-}
-.story-content {
-  background-color: #e3e2d3;
-  padding: 20px;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  width: 1321px;
-  border-radius: 10px;
-  height: 177px;
-}
-
-.story-content p {
-  font-size: 2em;
-  color: #555;
-}
-
 .images-section img {
   width: 100%;
   height: 750px;
 }
 
-.final-text-section {
-  padding: 40px;
-  background-color:#EEE1FF;
+.story {
   text-align: center;
+  background-color: #EEE1FF; 
+  padding: 20px;
 }
 
-.final-text-section p {
-  font-size: 2em;
-  color: #555;
+.story h1 {
+  text-transform: lowercase;
+  font-weight: bold;
+  font-size: 3em;
 }
+.story-box{ 
+background-color: #d3d3d3;
+  margin: 40px auto;
+  padding: 159px;
+  width: 1664px;
+  text-align: left;
+  margin-left: -37px;
+   }
+
+.story-box p {
+  font-size: 39px;
+  line-height: 1.5;
+  margin-right: 410px;
+}
+.text-normal{
+  margin: 40px auto;
+  padding: 159px;
+  width: 1664px;
+  text-align: left;
+  margin-left: -37px;
+  background-color: #EEE1FF;
+}
+.text-normal p{
+    font-size: 39px;
+    line-height: 1.5;
+    margin-right: 410px;
+  }
+
 
 .container {
   display: flex;
@@ -153,11 +149,11 @@ body {
 }
 
 .text-section {
-  margin-left: 20px;
+  margin-left: 87px;
 }
 
 .text-section h1 {
-  font-size: 43px;
+  font-size: 5em;
   color: #000;
 }
 
