@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.background {
+  background-image: url('imgs/cancer.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color:rgba(232, 89, 220, 0.049);
+  backdrop-filter: blur(0,5px); 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 100px;  
+  height: 70px;
+  border-radius: 20px;
+  z-index: 3;
+}
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  display: inline;
+  font-size: 15px; 
+  font-family: Arial, sans-serif; 
+  padding: 10px 0px;
+  border-radius: 20px;
+}
+
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.login a {
+  font-weight:bold;
+  border-radius: 20px; 
+  text-align: center; 
+  width:20px
+   }
+   .menu li.login {
+    border: 2px solid white;
+   }
+   .logo img {
+    width: 100px;
+    height: 30px;
+    margin-left: 10px ;
+  }
+  
+
+
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px; 
+  border-radius: 15px;
+  color: white;
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px; 
+  font-size: 1.8em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 1.1em; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  padding: 15px; 
+  margin-bottom: 20px; 
+  border-radius: 8px; 
+  border: none;
+  background-color: #2c002f;
+  color: white;
+  font-size: 1.1em; 
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  padding: 15px; 
+  background-color: #5e004c;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.2em; 
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #760061;
+}
+
+footer {
+  background-color: #0c0b4a;
+  color: white;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 25%;
+  margin-bottom: 20px;
+}
+
+.footer-section h2, .footer-section h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-section h2, .footer-section h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+  margin-bottom: 25px;
+  color: #b0b3c6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #b0b3c6;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #b0b3c6;
+  font-size: 14px;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+      flex-direction: column;
+      margin: 0 20px;
+      height: auto;
+      margin-left: 300px;
+  }
+
+  .logo img {
+      width: 80px;
+      height: 25px;
+  }
+
+  .menu {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+  }
+
+  .menu li {
+      font-size: 12px;
+  }
+
+  .form-container {
+      width: 280px;
+      padding: 30px;
+  }
+
+  h2 {
+      font-size: 1.4em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"] {
+      padding: 10px;
+      font-size: 0.9em;
+  }
+
+  button {
+      padding: 12px;
+      font-size: 1em;
+  }
+
+  footer .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .footer-section {
+      width: 100%;
+  }
+  
+  .footer-section ul {
+      text-align: center;
+  }
+}
